@@ -1,10 +1,14 @@
 import React from "react";
 
-function Categories() {
-
-
+function Categories(props) {
     return (
-        <div></div>
+        <div className="btn-container">
+            {props.categories.map((category, index) => {
+                return <button type="button" className="btn" key={index} onClick={() => props.filterItems(category)}>
+                    {category}
+                </button>
+            })}
+        </div>
     )
 }
 

@@ -11,8 +11,8 @@ function Menu({items}) {
                         <img alt="pic" src={img}/>
                         <div className="info">
                             <header>
-                            <h4>{title}</h4>
-                            <h4>{price}</h4>
+                            <h4 className="title">{title}</h4>
+                            <h4>${price}</h4>
                             </header>
                             <hr className="second-hr"/>
                             <p>{desc}</p>
