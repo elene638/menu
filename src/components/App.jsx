@@ -3,7 +3,8 @@ import menu from "./data";
 import Menu from "./Menu";
 import Categories from "./Categories";
 
-const allCategories = ["all",...new Set(menu.map((item)=> item.category))];
+const allCategories = ["all", ...new Set(menu.map((item)=> item.category))];
+console.log(allCategories)
 
 function App() {
     const [menuItems, setMenu] = React.useState(menu)
